@@ -203,6 +203,15 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+## ⚠️ Disclaimer
+
+This tool is intended for **educational and research purposes only**.  
+Unauthorized or malicious use of this tool to access, modify, or interfere with systems you do not own or have explicit permission to test is **strictly prohibited** and may be illegal.
+
+The author assumes **no responsibility** for any consequences arising from the use or misuse of this software.  
+Always ensure you are complying with all applicable **laws and ethical guidelines** when using this tool.
+
+
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -224,7 +233,3 @@ Project Link: [https://github.com/yourusername/WebForensicAnalyzer](https://gith
 <<<<<<< HEAD
   <sub>Built with ❤️ by ilyass basbassi for Security Researchers</sub>
 </div>
-=======
-  <sub>Built with ❤️ by ilyass basbassi</sub>
-</div>
->>>>>>> 3dc6221 (Docs: update README.MD with new info)
