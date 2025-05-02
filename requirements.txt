@@ -1,0 +1,22 @@
+# Core dependencies
+requests>=2.28.1
+beautifulsoup4>=4.11.1
+dnspython>=2.2.1
+python-whois>=0.7.3
+colorama>=0.4.6
+tqdm>=4.64.1
+
+# Optional dependencies for enhanced functionality
+python-nmap>=0.7.1
+shodan>=1.28.0
+
+# Security and parsing
+urllib3>=1.26.12
+cryptography>=38.0.1
+
+# Output formatting
+tabulate>=0.9.0
+pytz>=2022.4
+
+# For handling certificate data
+pyOpenSSL>=22.1.0

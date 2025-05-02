@@ -1,0 +1,18 @@
+
+---
+
+# sample_proxies.csv
+
+```csv
+# Sample Proxy List
+# Format 1: IP,Port
+104.16.45.29,3128
+198.41.0.4,80
+151.101.1.69,443
+216.58.214.46,80
+172.217.168.46,8080
+
+
+# Format 2: IP,Port,Username,Password (remove # to use)
+#192.168.1.100,8080,proxyuser,password123
+#10.0.0.50,3128,admin,securepass

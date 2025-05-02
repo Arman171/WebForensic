@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  web-forensic-analyzer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: web-forensic-analyzer
+    volumes:
+      # Mount the current directory to /app in the container
+      - ./:/app
+      # Mount a volume for output data persistence
+      - ./output:/app/output
+    environment:
+      # Set any environment variables needed
+      - PYTHONUNBUFFERED=1
+    # Override the default entrypoint command
+    # Replace example.com with your target
+    command: ["example.com", "-d", "2", "-o", "/app/output/results.json", "-v"]
+    # Restart policy
+    restart: "no"
+    # Network configuration if needed
+    # network_mode: "host"  # Uncomment for host networking
