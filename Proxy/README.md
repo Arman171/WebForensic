@@ -23,11 +23,14 @@ A high-performance proxy testing tool with visual analytics, designed for develo
   pip install requests colorama matplotlib
 
 ## How to run the script 
+
   ```bash
   python proxy_tester.py 
   ```
   
 ## 👁️‍🗨️ UI 
+
 When you gonna run the script you will see something like this .
+
 ![Screenshot of Tool](/assets/proxy_tester_results.png)
 
