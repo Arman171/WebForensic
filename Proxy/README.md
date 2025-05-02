@@ -1,6 +1,6 @@
 # 🔍 Proxy Tester 
 
-![Banner](https://i.imgur.com/JQZ1l1a.png)
+
 
 A high-performance proxy testing tool with visual analytics, designed for developers and bot creators who need reliable proxy validation.
 
