@@ -221,5 +221,5 @@ Project Link: [https://github.com/yourusername/WebForensicAnalyzer](https://gith
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by Security Researchers for Security Researchers</sub>
+  <sub>Built with ❤️ by ilyass basbassi for Security Researchers</sub>
 </div>
