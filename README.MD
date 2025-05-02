@@ -225,11 +225,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Contact
 
-Project Link: [https://github.com/yourusername/WebForensicAnalyzer](https://github.com/yourusername/WebForensicAnalyzer)
+Project Link: [https://github.com/the-random-guy-from212/WebForensic](https://github.com/the-random-guy-from212/WebForensic)
 
 ---
 
-<div align="center">
-<<<<<<< HEAD
-  <sub>Built with ❤️ by ilyass basbassi for Security Researchers</sub>
-</div>
