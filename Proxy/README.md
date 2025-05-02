@@ -21,7 +21,7 @@ A high-performance proxy testing tool with visual analytics, designed for develo
 - Required packages:
   ```bash
   pip install requests colorama matplotlib
-## UI 
+## 👁️‍🗨️ UI 
 
 ![Screenshot of Tool](/assets/proxy_tester_results.png)
 
