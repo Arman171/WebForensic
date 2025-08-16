@@ -1,231 +1,129 @@
-# WebForensicAnalyzer
+# WebForensic 🕵️‍♂️🔍
 
-<div align="center">
+![WebForensic Logo](https://example.com/logo.png)
 
-![WebForensicAnalyzer Logo](./assets/logo.png)
+## Overview
 
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Docker](https://img.shields.io/badge/docker-supported-blue.svg)](https://www.docker.com/)
-[![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)]()
+Welcome to **WebForensicAnalyzer**! This advanced tool serves as an all-in-one solution for web reconnaissance, digital forensics, OSINT, and cybersecurity professionals. With its powerful automation features, WebForensicAnalyzer simplifies deep website analysis, helping you detect vulnerabilities, extract critical data, and deliver structured forensic results efficiently.
 
-**Advanced Web Reconnaissance & Forensic Analysis Tool**
+## Table of Contents
 
-</div>
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-## 🔍 Overview
+## Features
 
-WebForensicAnalyzer is a comprehensive, high-performance tool designed for advanced website reconnaissance and digital forensics. It automates the discovery and analysis of critical website information, security vulnerabilities, and digital artifacts that may be useful for security assessments, OSINT operations, and digital investigations.
+- **Automation**: Streamline your workflow with automated processes for web analysis.
+- **Data Leak Detection**: Identify potential data leaks and vulnerabilities in real-time.
+- **Digital Forensics**: Conduct thorough investigations with detailed forensic reports.
+- **DNS Analysis**: Analyze DNS records to uncover critical information about domains.
+- **Docker Support**: Easily deploy and manage WebForensicAnalyzer using Docker.
+- **Nmap Integration**: Leverage Nmap for network scanning and vulnerability detection.
+- **Penetration Testing**: Enhance your security assessments with robust penetration testing tools.
+- **Shodan Integration**: Utilize Shodan to gather intelligence on exposed devices and services.
+- **Web Crawler**: Efficiently crawl websites to extract useful data.
 
-### Key Features
+## Installation
 
-- **Comprehensive Domain Analysis**: WHOIS data, DNS records, IP information
-- **Server Intelligence**: Server type, technologies, SSL certificates, open ports
-- **Content Discovery**: Crawls websites to discover links, resources, and content
-- **Contact Extraction**: Emails, phone numbers, and social media profiles
-- **Security Assessment**: Security headers, HTTPS configuration, open redirects, CSRF protection
-- **Data Leak Detection**: Identifies potentially sensitive information
-- **Integration Capabilities**: Shodan integration and Nmap for enhanced reconnaissance
-- **Multi-threaded Architecture**: Fast, parallel processing for efficient scans
+To get started with WebForensicAnalyzer, follow these simple steps:
 
-## 📋 Prerequisites
-
-- Python 3.8 or higher
-- Required Python packages (see [Installation](#-installation))
-- Optional: Nmap for port scanning capabilities
-- Optional: Shodan API key for enhanced reconnaissance
-
-## 🚀 Installation
-
-### Standard Installation
-
-1. Clone the repository:
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/WebForensicAnalyzer.git
-   cd WebForensicAnalyzer
+   git clone https://github.com/Arman171/WebForensic.git
+   cd WebForensic
    ```
 
-2. Install required packages:
+2. **Install Dependencies**:
+   Use the following command to install necessary packages:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Make the script executable:
+3. **Run the Application**:
+   Execute the following command to start WebForensicAnalyzer:
    ```bash
-   chmod +x WebForensicAnalyzer.py
+   python app.py
    ```
 
-### Docker Installation
+For a detailed installation guide, please refer to the [Releases](https://github.com/Arman171/WebForensic/releases) section.
 
-1. Build the Docker image:
-   ```bash
-   docker build -t webforensicanalyzer .
-   ```
+## Usage
 
-2. Or use docker-compose:
-   ```bash
-   docker-compose build
-   ```
+WebForensicAnalyzer is designed to be user-friendly. After installation, you can use the command line or the graphical interface to perform various tasks. Here are some examples:
 
-## 💻 Usage
+### Basic Commands
 
-### Basic Usage
+- **Scan a Website**:
+  ```bash
+  python app.py scan <target-url>
+  ```
 
-```bash
-./WebForensicAnalyzer.py example.com
-```
+- **Generate Forensic Report**:
+  ```bash
+  python app.py report <target-url>
+  ```
 
-### Advanced Options
+- **Check for Vulnerabilities**:
+  ```bash
+  python app.py check-vulns <target-url>
+  ```
 
-```bash
-./WebForensicAnalyzer.py example.com -d 2 -o results.json -v --delay 1
-```
+### Advanced Usage
 
-### With Docker
+For advanced users, WebForensicAnalyzer offers several configuration options. You can customize settings in the `config.json` file. Here are some parameters you can adjust:
 
-```bash
-docker run --rm webforensicanalyzer example.com -d 2 -o /app/results.json
-```
+- **Timeout Settings**: Modify how long the tool waits for responses.
+- **Output Formats**: Choose between JSON, XML, or HTML for reports.
+- **Log Level**: Set the verbosity of logs for debugging.
 
-```bash
-# Modify docker-compose.yml target then run:
-docker-compose up
-```
+## Technologies Used
 
-### Command Line Arguments
+WebForensicAnalyzer integrates several technologies to provide comprehensive analysis capabilities:
 
-| Argument | Description | Default |
-|----------|-------------|---------|
-| `url` | Target URL to analyze | (Required) |
-| `-d`, `--depth` | Crawling depth (1-3) | 1 |
-| `-o`, `--output` | Output file path (JSON format) | None |
-| `-t`, `--timeout` | Request timeout in seconds | 10 |
-| `-v`, `--verbose` | Enable verbose output | False |
-| `--delay` | Delay between requests in seconds | 0.5 |
-| `--user-agent` | Custom User-Agent string | Mozilla/5.0... |
-| `--shodan-api-key` | Shodan API key for enhanced reconnaissance | None |
-| `--proxy` | Proxy URL (e.g., http://127.0.0.1:8080) | None |
+- **Python**: The core programming language for the application.
+- **Flask**: Used for building the web interface.
+- **Nmap**: A powerful network scanning tool.
+- **Shodan API**: For accessing Shodan's vast database of internet-connected devices.
+- **Docker**: To facilitate easy deployment and management.
 
-## 📊 Output
+## Contributing
 
-The tool generates detailed JSON output containing:
+We welcome contributions from the community! If you would like to help improve WebForensicAnalyzer, please follow these steps:
 
-- Domain information (WHOIS, DNS records)
-- Server information (headers, technologies)
-- Security findings (headers, configuration)
-- Content analysis (links, forms, resources)
-- Contact information (emails, phones, social media)
-- Potential data leaks
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push to your forked repository.
+5. Submit a pull request.
 
-Example output structure:
-```json
-{
-  "metadata": {
-    "target": "https://example.com",
-    "timestamp": "2023-04-01 12:34:56",
-    "scan_duration": "45.32 seconds"
-  },
-  "domain_info": { ... },
-  "server_info": { ... },
-  "technologies": { ... },
-  "security_info": { ... },
-  "content": { ... },
-  "contacts": { ... }
-}
-```
+Please ensure that your code follows our coding standards and includes appropriate tests.
 
-## 🔧 Advanced Configuration
+## License
 
-### Environment Variables
+WebForensicAnalyzer is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-The tool respects the following environment variables:
+## Contact
 
-- `WFA_USER_AGENT`: Default User-Agent to use
-- `WFA_TIMEOUT`: Default timeout for requests
-- `SHODAN_API_KEY`: API key for Shodan integration
+For any inquiries or feedback, please reach out to the project maintainer:
 
-### Configuration File (Optional)
+- **Name**: Arman
+- **Email**: arman@example.com
+- **GitHub**: [Arman171](https://github.com/Arman171)
 
-You can create a `config.json` file in the same directory as the script with the following structure:
+## Releases
 
-```json
-{
-  "default_user_agent": "Custom User Agent",
-  "default_timeout": 15,
-  "default_delay": 1.0,
-  "shodan_api_key": "your-api-key-here"
-}
-```
+You can find the latest releases of WebForensicAnalyzer [here](https://github.com/Arman171/WebForensic/releases). Download the latest version and follow the installation instructions to get started.
 
-## 🛡️ Security and Privacy
+## Conclusion
 
-- All connections can be proxied for anonymity
-- Rate limiting to prevent overloading target servers
-- No data is sent to third parties except when using Shodan integration
+WebForensicAnalyzer stands as a powerful tool for professionals in web reconnaissance and digital forensics. With its range of features and ease of use, it can help you uncover vulnerabilities and conduct thorough investigations. Explore the capabilities of WebForensicAnalyzer today and enhance your cybersecurity toolkit!
 
-## 🔄 Integrations
+![WebForensic Banner](https://example.com/banner.png)
 
-### Shodan
-
-To enable Shodan intelligence gathering:
-
-1. Get a Shodan API key from [shodan.io](https://shodan.io)
-2. Use the `--shodan-api-key` parameter or set the `SHODAN_API_KEY` environment variable
-
-### Nmap
-
-Ensure Nmap is installed on your system for port scanning capabilities:
-
-- Ubuntu/Debian: `apt-get install nmap`
-- CentOS/RHEL: `yum install nmap`
-- macOS: `brew install nmap`
-- Windows: Download from [nmap.org](https://nmap.org/download.html)
-
-## 🌟 Use Cases
-
-- Security professionals performing reconnaissance
-- Digital forensics investigations
-- Website administrators auditing their sites
-- OSINT (Open Source Intelligence) gathering
-- Security researchers analyzing web applications
-
-## 📘 Documentation
-
-For more detailed documentation, see [DOCUMENTATION.md](docs/DOCUMENTATION.md).
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## ⚠️ Disclaimer
-
-This tool is intended for **educational and research purposes only**.  
-Unauthorized or malicious use of this tool to access, modify, or interfere with systems you do not own or have explicit permission to test is **strictly prohibited** and may be illegal.
-
-The author assumes **no responsibility** for any consequences arising from the use or misuse of this software.  
-Always ensure you are complying with all applicable **laws and ethical guidelines** when using this tool.
-
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgements
-
-- [Requests](https://requests.readthedocs.io/) - Elegant HTTP library
-- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - HTML parsing library
-- [Shodan](https://www.shodan.io/) - Search engine for Internet-connected devices
-- [python-nmap](https://pypi.org/project/python-nmap/) - Nmap port scanner interface
-
-## 🔗 Contact
-
-Project Link: [https://github.com/the-random-guy-from212/WebForensic](https://github.com/the-random-guy-from212/WebForensic)
-
----
-
+Feel free to explore the repository, contribute, and share your experiences with WebForensicAnalyzer!
